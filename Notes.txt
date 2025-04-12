@@ -1,0 +1,59 @@
+------BACKEND------
+
+1) BACKEND SETUP - Creating Nodejs Project
+    cd backend, "npm init" to create a nodejs project and get package-json. 
+    This file is super important because it stores metadata about your project and helps manage dependencies, scripts, and other project settings. 
+
+2) Install the dependencies/package
+    npm i express mongoose dotenv jsonwebtoken bcryptjs cookie-parser cloudinary socket.io nodemon
+
+    1. express
+    Purpose: Web framework for Node.js.
+    Use: To build APIs and handle HTTP requests/responses easily.
+    Example: Routing, middleware, etc.
+
+    2. mongoose
+        Purpose: MongoDB object modeling tool.
+        Use: To interact with MongoDB using schema-based models.
+        Example: Create models like User, Post, etc.
+
+    3. dotenv
+        Purpose: Loads environment variables from a .env file.
+        Use: To securely manage secrets like DB URLs, API keys, etc.
+        Example: process.env.DB_URI
+
+    4. jsonwebtoken
+        Purpose: To create and verify JWT (JSON Web Tokens).
+        Use: For authentication and securing routes.
+        Example: Login token generation, middleware auth check.
+
+    5. bcryptjs
+        Purpose: To hash passwords.
+        Use: To securely store passwords in the database.
+        Example: bcrypt.hash(password) and bcrypt.compare(...)
+
+    6. cookie-parser
+        Purpose: Parses cookies from the request headers.
+        Use: To access and manage cookies in Express apps.
+        Example: req.cookies.token
+
+    7. cloudinary
+        Purpose: Upload and manage images/videos on Cloudinary.
+        Use: For media hosting and optimization.
+        Example: Upload profile pictures, product images, etc.
+
+    8. socket.io
+        Purpose: Real-time, bidirectional communication between server and client.
+        Use: For features like chat, notifications, live updates.
+        Example: Live chat app, multiplayer game, etc.
+    
+    9. nodemon
+    A utility that automatically restarts your Node.js app whenever you make changes to your code.
+    Saves you from manually stopping and restarting the server every time you update something.
+
+3) Make Entry file i.e. index.js
+    This is where we have our express app, routes and middlewares
+
+4) Type = module and Add "dev": "nodemon index.js" script.
+
+5)

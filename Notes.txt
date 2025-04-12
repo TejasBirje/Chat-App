@@ -1,5 +1,7 @@
 ------BACKEND------
 
+BACKEND SETUP
+
 1) BACKEND SETUP - Creating Nodejs Project
     cd backend, "npm init" to create a nodejs project and get package-json. 
     This file is super important because it stores metadata about your project and helps manage dependencies, scripts, and other project settings. 
@@ -56,4 +58,25 @@
 
 4) Type = module and Add "dev": "nodemon index.js" script.
 
-5)
+5) Create "src" and put index.js, controllers, models, etc into it.
+
+
+DATABASE SETUP
+
+1) Connect to MongoDB
+2) MODELS 
+
+USER: 
+    _id, (created by Mongo)
+    email,
+    fullName,
+    password,
+    profilePic,
+    createdAt, (by mongo)
+    updatedAt, (by mongo)
+
+MESSAGE 
+    senderID,
+    receiverID,
+    text,
+    image

@@ -110,6 +110,8 @@ export const updateProfile = async(req,res) => {
         // Also update the profile pic in MongoDB
         const updatedUser = await User.findByIdAndUpdate(userId, {profilePic: uploadResponse.secure_url}, {new: true});
         // the {new: true}, if true, then mongo returns the updated document. By default, Mongo, returns the old document
+    
+        res.status(200).json(updatedUser);
     } catch (error) {
         console.log("Error Updating Profile in updateProfile controller, ", error);
         res.status(500).json({ message: "Internal Server Error"});

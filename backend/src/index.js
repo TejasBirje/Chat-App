@@ -17,7 +17,7 @@ const __dirname = path.resolve();
 app.use(express.json());  // allows us to extract JSON data out from the req.body
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://chat-app-g3wy.onrender.com"],
     credentials: true,
 }));
 
